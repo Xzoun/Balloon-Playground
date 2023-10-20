@@ -1,0 +1,19 @@
+.generalButtons {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.generalButtons:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.link {
+    text-decoration: none;
+  }
+
+  .buttonNotButton{
+    background-color: rgba(0,0,0,0);
+    border: none;
+  }

@@ -1,0 +1,71 @@
+/* ---------------------- Pagina ---------------------- */
+
+.inputDashBoard {
+  width: 40vw;
+}
+
+/* ----------------- Juegos ----------------- */
+
+.searchUsers {
+  display: flex;
+  gap: 2rem;
+}
+
+.games {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.games:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  cursor: pointer;
+  transform: scale(1.1);
+  color: black;
+}
+
+.logGameContDashBoard {
+  border-radius: 50%;
+  border: 3px solid black;
+  height: 10rem;
+  width: 10rem;
+}
+
+.logoGameDashBoard {
+  width: 10rem;
+  height: 8rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 18;
+}
+
+@media (max-width: 900px) {
+  /* --------------- DashBoard --------------- */
+  .gameDescription {
+    display: none;
+  }
+
+  .games {
+    justify-content: center;
+  }
+
+  .logoGame {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .logGameContDashBoard {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .logoGameDashBoard {
+    width: 5rem;
+    height: 4rem;
+  }
+
+}

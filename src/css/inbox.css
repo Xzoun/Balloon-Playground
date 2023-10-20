@@ -1,0 +1,194 @@
+/* ------------------ InboxView ------------------ */
+
+.inbox {
+  display: flex;
+  gap: 2rem;
+}
+
+.contCreateChat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 0 2rem 0;
+}
+
+.inputCreateChat {
+  width: 10vw;
+}
+
+/* ------------------ ChatList Component------------------ */
+
+.chatList {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 70vh;
+  max-width: 25vw;
+}
+
+.chatSelect {
+  border-bottom: 1px solid rgb(197, 194, 194);
+  padding: 0.3rem 1rem;
+  display: flex;
+}
+
+.chatNameList {
+  overflow: hidden;
+  height: 5rem;
+  padding: 10px;
+}
+
+.fotoChatList {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+.chatSelect:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 8px;
+}
+
+/* ------------------ ChatRoom Component ------------------ */
+
+.chatName {
+  border-bottom: solid rgb(197, 194, 194) 1px;
+}
+
+.chatWindow {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 50vw;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.messages {
+  overflow-x: hidden;
+  height: 75vh;
+  width: 55vw;
+}
+
+.message {
+  max-width: 100%;
+  word-wrap: break-word;
+
+}
+
+.inputChat {
+  width: 85%;
+}
+
+.nuevoMensaje {
+  display: flex;
+  gap: 2rem;
+}
+
+.messageChatDiv {
+  max-width: 44vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+
+@media (max-width: 900px) {
+  /* --------------- Inbox --------------- */
+
+  .inbox {
+    flex-direction: column;
+  }
+
+  .contCreateChat {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .inputCreateChat {
+    min-width: 50vw;
+  }
+
+  /* --- ChatList ---*/
+
+  .chatList {
+    overflow: scroll;
+    max-height: 20vh;
+    min-width: 95vw;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .chatSelect {
+    padding: 0rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 15vw;
+    max-height: 18vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .chatSelect:hover {
+    cursor: auto;
+    transform: none;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .lastMessage {
+    display: none;
+  }
+
+  .chatNameList {
+    overflow: hidden;
+  }
+
+  .fotoChatList {
+    border-radius: 50px;
+    border: 3px solid black;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* --- ChatRoom --- */
+
+  .chatRoom {
+    height: calc(100vh-4rem);
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chatWindow {
+    max-height: 50vh;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 90vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .messages {
+    overflow-x: hidden;
+    display: flex;
+    max-height: 60vh;
+    min-width: 90vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .messageChatDiv {
+    min-width: 74vw;
+    padding: 0;
+    margin: 0;
+  }
+}

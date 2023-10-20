@@ -1,0 +1,119 @@
+/* --------------------------- General --------------------------- */
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.flexOpening {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* ---------  App Logo --------- */
+.logoAppFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10vh;
+    min-width: 80vw;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 40vh;
+}
+
+.logoImageEffect {
+    width: 0;
+    height: 0;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center center;
+    animation: growLogo 2s ease-out forwards;
+}
+
+.logoImage {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ---------  Leo Logo --------- */
+
+.leoLogoContainer {
+    position: fixed;
+    bottom: 10vh;
+    right: 2rem;
+    display: flex;
+    font-weight: 700;
+}
+
+.leoLogo {
+    background-image: url("../img/LeBenitez.png");
+    background-size: cover;
+    background-position: center center;
+    width: 10vh;
+    height: 10vh;
+}
+
+/* ----------------- Efectos----------------- */
+
+@keyframes growLogo {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+ /* ----------------- Crear Perfil ----------------- */
+
+ .profile {
+    align-items: start;
+  }
+
+  .profile Form.Control,
+  .profile .label {
+    width: 100%;
+  }
+
+  .profile Button,
+  .left Button {
+    align-self: flex-end;
+    margin-right: 5%;
+  }
+
+  .FloatingLabel .form-control::placeholder {
+    color: #a8b0b8;
+  }

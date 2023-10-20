@@ -1,0 +1,190 @@
+    @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Kanit:wght@100;300;700&family=Quicksand:wght@300;500;700&display=swap');
+
+    /* ---------------------- General ---------------------- */
+
+    body {
+      font-family: 'Quicksand', 'comic sans';
+    }
+
+    .general {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .page {
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      width: calc(100vw - 6rem);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    /* ----------------- Pages ----------------- */
+
+    .blockContainer {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: solid rgb(197, 194, 194) 1px;
+    }
+
+    .blockBody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    textarea {
+      resize: none;
+      overflow: hidden;
+    }
+
+    /* ----------------- Align ----------------- */
+    .center {
+      align-self: center;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    /* ---------------------- Alert ---------------------- */
+    .alert {
+      align-self: center;
+      width: 80%;
+      text-align: center;
+      position: fixed;
+      top: 2%;
+      left: 10%;
+    }
+
+    /* ---------------------- ScrollBar ---------------------- */
+    body::-webkit-scrollbar,
+    .offCanvasBody::-webkit-scrollbar,
+    .messages::-webkit-scrollbar,
+    .chatList::-webkit-scrollbar,
+    .blockCategories::-webkit-scrollbar,
+    .messagesMiniChat::-webkit-scrollbar {
+      width: 7px;
+      height: 0px;
+      margin-right: 3px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    body:hover::-webkit-scrollbar-thumb,
+    .offCanvasBody::-webkit-scrollbar-thumb,
+    .messages:hover::-webkit-scrollbar-thumb,
+    .blockCategories::-webkit-scrollbar-thumb,
+    .chatList:hover::-webkit-scrollbar-thumb {
+      background-color: #2d2a48;
+      border-radius: 12px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover,
+    .offCanvasBody::-webkit-scrollbar-thumb:hover,
+    .messages::-webkit-scrollbar-thumb:hover,
+    .chatList::-webkit-scrollbar-thumb:hover,
+    .blockCategories::-webkit-scrollbar-thumb:hover {
+      width: 7px;
+      background-color: #616161;
+      border-radius: 12px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ---------------------- Loading ---------------------- */
+
+    .loadingFlex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      padding-top: 10vh;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .flexOn {
+      display: flex;
+    }
+
+    /* ----------------- EditarPerfil ----------------- */
+
+    .profile div .blockTittle {
+      align-self: flex-start;
+      border-bottom: white 1px solid;
+    }
+
+    .cargarUsername {
+      display: flex;
+      gap: 5%;
+    }
+
+    .profilePic {
+      border-radius: 15px;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .border {
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 0.2rem;
+    }
+
+    .profilePicCont {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    /* ----------------- PublicProfile ----------------- */
+
+    .photoPublic {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      border: 3px solid black;
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+    .generalOutOfNav {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 4%;
+    }
+
+    Button:hover img {
+      filter: invert(1);
+    }
+
+    .sectionTittle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+    }
+
+    .changeState {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .inputNewState {
+      min-width: 80vh;
+      word-wrap: break-word;
+      border-radius: 8px;
+    }
+
+    .inputNewState::placeholder {
+      color: white;
+    }

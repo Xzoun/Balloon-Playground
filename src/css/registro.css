@@ -1,0 +1,39 @@
+/* ---------  Autenticar --------- */
+.autenticar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headLine {
+    margin-top: 10%;
+}
+
+/* ----  LoginView ---- */
+
+.logosCont {
+    display: flex;
+    gap: 2rem;
+}
+
+/* ----  ChooseUsername ---- */
+
+.onlyOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.logoAuth {
+    height: 4rem;
+    width: 4rem;
+}
+
+.labelUser {
+    width: 80%;
+}

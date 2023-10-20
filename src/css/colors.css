@@ -1,0 +1,69 @@
+/* ------------- Botones ------------- */
+
+.colorsCont {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+.themeChanger {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.linkSucces {
+    color: green;
+    font-weight: 700;
+  }
+
+/* ------------- Themes ------------- */
+
+.whiteTheme {
+    background-color: white;
+    color: black;
+}
+
+.blackTheme {
+    background-color: black;
+    color: white;
+}
+
+.redTheme {
+    background-color: rgb(250, 191, 191);
+    color: black;
+}
+
+.pinkTheme {
+    background-color: rgb(168, 60, 78);
+    color: white;
+}
+
+.orangeTheme {
+    background-color: rgb(255, 198, 92);
+    color: black;
+}
+
+.yellowTheme {
+    background-color: rgb(255, 243, 138);
+    color: black;
+}
+
+.greenTheme {
+    background-color: rgb(63, 145, 38);
+    color: white;
+}
+
+.blueTheme {
+    background-color: rgb(14, 14, 95);
+    color: white;
+}
+
+@media (max-width:500px) {
+
+    .themeChanger {
+        width: 20px;
+        height: 20px;
+    }
+    
+}

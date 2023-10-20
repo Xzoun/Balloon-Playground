@@ -1,0 +1,207 @@
+/* ----------------- Ingame ----------------- */
+.pageOutOfNav {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.chatWindowMiniFixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    background: rgb(0, 34, 150);
+    background: linear-gradient(180deg,
+            rgba(0, 34, 150, 0) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0.8) 80%,
+            rgb(0, 0, 0) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.chatLogo:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.messagesMiniChat {
+    padding: 3rem 0.3rem 0.3rem 0.3rem;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.nuevoMensajeMiniChat {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------- Ingame ----------------- */
+.logoContInGame {
+    width: 10rem;
+    height: 10rem;
+    border: solid 3px black;
+    border-radius: 50%;
+}
+
+.logoInGame {
+    width: 10rem;
+    height: 8rem;
+    border-radius: 25%;
+}
+
+/* ----------------- BoardView ----------------- */
+.inGameView {
+    height: 85vh;
+    width: calc(100vw-2rem);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fourPlayers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 9.5rem;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.tableCont {
+    width: 100%;
+}
+
+.header {
+    height: 4rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(85vh - 6rem);
+}
+
+.player {
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trofies {
+    width: 100%;
+    height: auto;
+}
+
+.profile {
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 50%;
+}
+
+/* ---------- Dado ---------- */
+.dadoContenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dadoRespuestaCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dadoRespuesta {
+    font-weight: 800;
+    border-bottom: 3px solid black;
+}
+
+@media (max-width:900px) {
+
+    .pageOutOfNav {
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .messagesMiniChat {
+        padding: 0.3rem;
+        min-height: 60vh;
+    }
+
+    .nuevoMensajeMiniChat {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    .chatWindowMiniFixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 8px;
+    }
+
+    .logoInGame {
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .player {
+        border-radius: 50%;
+        border: 3px solid black;
+        width: 4.5rem;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile {
+        width: 4.3rem;
+        height: 4.3rem;
+    }
+}

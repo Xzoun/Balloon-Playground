@@ -1,0 +1,176 @@
+.logoContLobby {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: solid 3px black;
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    z-index: 20;
+}
+
+.rooms {
+    margin-top: 2rem;
+}
+
+
+/* --------------- Lobby | preguntatlon --------------- */
+.copiarCodigo {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    border: 3px black double;
+}
+
+.copiar {
+    display: none;
+    position: absolute;
+    top: -2.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 20;
+    border-bottom: solid black 1px;
+}
+
+.copiarCodigo:hover .copiar {
+    display: block;
+}
+
+.opcionCreatePreguntatlon {
+    cursor: pointer;
+}
+
+.salaName {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.salaName:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-bottom: solid 3px black;
+}
+
+.salaName {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    max-height: 15vh;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    cursor: pointer;
+}
+
+.salaName:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-bottom: solid 3px black;
+}
+
+/* ----------------- create Preguntatlon ----------------- */
+
+.offCanvas {
+    margin: 10vh 10vw;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+.headerCreateGameRoom {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.blockCategories {
+    padding: 0.2rem;
+    overflow-x: scroll;
+}
+
+.borderRight {
+    border-right: 1px solid black;
+}
+
+.blockCategories p,
+.lastCategory p {
+    text-align: center;
+}
+
+.gameSettings {
+    display: flex;
+    justify-content: center;
+}
+
+.flexCreateGame {
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+}
+
+.blockCategories {
+    border: none;
+}
+
+@media (max-width:900px) {
+
+    .chatWindowMiniFixed {
+        width: 100vw;
+    }
+
+    .chatLogo {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    .chatLogo:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    .messagesMiniChat {
+        padding: 0.3rem;
+        min-height: 60vh;
+    }
+
+    .blockCategories {
+        overflow: hidden;
+    }
+
+    .nuevoMensajeMiniChat {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    .gameSettings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 75vw;
+
+    }
+
+    .flexCreateGame {
+        display: flex;
+        padding: 2%;
+        flex-direction: row;
+        width: 74vw;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+
+    .borderRight {
+        border: none;
+    }
+
+    .logoContLobby {
+        width: 5rem;
+        height: 5rem;
+    }
+}

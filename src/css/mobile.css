@@ -1,0 +1,67 @@
+@media (max-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        margin: 0;
+        padding: 5vh 2vw 0 2vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        overflow-x: hidden;
+        min-height: calc(100vh-4rem);
+        margin-bottom: 10vh;
+    }
+
+    .blockBody {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* --------------- Edit Profile --------------- */
+    .inputNewStateCont {
+        width: 90vw;
+        overflow: hidden;
+    }
+
+    .inputNewState {
+        min-width: 80vw;
+    }
+
+    .changeState {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2rem;
+        width: 95vw;
+    }
+
+    .inputNewState::placeholder {
+        color: rgb(168, 168, 168);
+    }
+
+    .crearSala {
+        width: 100%;
+    }
+
+    .profilePicCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .profileInfoCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
